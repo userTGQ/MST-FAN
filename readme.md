@@ -20,16 +20,14 @@ All 7 datasets come from the [LibCity](https://github.com/LibCity/Bigscity-LibCi
 
 ## Train & Test
 
-You can train and test **MST-FAN** through the following commands for 7 datasets. Parameter configuration (**--config_file**) reads the JSON file in the root directory. If you need to modify the parameter configuration of the model, please modify the corresponding **JSON** file.
+You can train and test **MST-FAN** through the following commands for 4 datasets. Parameter configuration (**--config_file**) reads the JSON file in the root directory. If you need to modify the parameter configuration of the model, please modify the corresponding **JSON** file.
 
 ```shell
 python run_model.py --task traffic_state_pred --model MST-FAN --dataset PeMS04 --config_file PeMS03
 python run_model.py --task traffic_state_pred --model MST-FAN --dataset PeMS04 --config_file PeMS04
 python run_model.py --task traffic_state_pred --model MST-FAN --dataset PeMS08 --config_file PeMS08
 python run_model.py --task traffic_state_pred --model MST-FAN --dataset PeMS07 --config_file PeMS07
-python run_model.py --task traffic_state_pred --model MST-FAN --dataset NYCTaxi --config_file NYCTaxi --evaluator TrafficStateGridEvaluator
-python run_model.py --task traffic_state_pred --model MST-FAN --dataset CHIBike --config_file CHIBike --evaluator TrafficStateGridEvaluator
-python run_model.py --task traffic_state_pred --model MST-FAN --dataset T-Drive --config_file T-Drive --evaluator TrafficStateGridEvaluator
+
 ```
 
 If you have trained a model as above and only want to test it, you can set it as follows (taking PeMS08 as an example, assuming the experiment ID during training is $ID):
