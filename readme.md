@@ -1,6 +1,6 @@
 #  MST-FAN: A multi-perspective spatial-temporal fusion attention network for traffic flow prediction
 
-#  The following complete code is waiting for the paper to be accepted and uploaded
+The following complete code is waiting for the paper to be accepted and uploaded
 
 ## Requirements
 
